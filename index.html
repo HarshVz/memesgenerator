@@ -86,10 +86,10 @@ let subreddits = ["dankmemes", "dogmemes", "me_irl", "wholesomememes" , "animeme
 
 let getmemes = () => {
 let randomemes = subreddits[Math.floor(Math.random() * subreddits.length)]
-console.log(randomemes);
+//console.log(randomemes);
 
 fetch(url+randomemes).then(resp => resp.json()).then(data => {
-    console.log(data)
+    //console.log(data)
     let memeimg = new Image();
     memeimg.onload = () =>{
         meme.src = data.url;
